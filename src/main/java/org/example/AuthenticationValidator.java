@@ -3,7 +3,7 @@ package org.example;
 import java.util.regex.Pattern;
 
 public class AuthenticationValidator {
-    public static Pattern regex = Pattern.compile("^[A-Za-z0-9_]{0,20}$");
+    private static Pattern regex = Pattern.compile("^[A-Za-z0-9_]{0,20}$");
 
     public static void checkAuthentication(String login, String password, String confirmPassword)
             throws WrongLoginException,WrongPasswordException {
